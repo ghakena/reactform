@@ -143,11 +143,11 @@ class App extends Component {
                         <br/>
                         <p>Please, select your gender</p>
                         <input type="radio" id="male" name="gender" value="male" />
-                        <label for="male">Male</label><br/>
+                        <label style={{ marginLeft: "5px" }} for="male">Male</label><br/>
                         <input type="radio" id="female" name="gender" value="female" />
-                        <label for="female">Female</label><br/>
+                        <label style={{ marginLeft: "5px" }} for="female">Female</label><br/>
                         <input type="radio" id="other" name="gender" value="other" />
-                        <label for="other">Other</label>
+                        <label style={{ marginLeft: "5px" }} for="other">Other</label>
 
                     </div>
                     <br/>
@@ -209,7 +209,6 @@ class App extends Component {
                 <br/>
                 <br/>
                 <br/>
-                <p>{this.state.age}</p>
                 <p className="warning">This is property of the Electoral Commission of Uganda. Unlawful use of this document will lead to prosecution in the Highest Court of Law</p>
             </div>
          );

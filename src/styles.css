@@ -48,3 +48,7 @@ input {
     font-size: 25px;
     margin-bottom: 0px;
 }
+
+#male, #female, #other {
+    margin-left: 5px;
+}
