@@ -1,0 +1,38 @@
+body {
+    background-image: url("https://res.cloudinary.com/rokuirie/image/upload/v1598445915/react-form/ug_flag_1_1_ojkbaj.png");
+    background-repeat: inherit;
+    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    background-color: rgb(199, 196, 196);
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 10px;
+    margin-bottom: 120px;
+}
+.first-line {
+    font-weight: bold;
+}
+label {
+    font-size: large;
+}
+.submit-btn {
+    padding: 20px 30px 20px 30px;
+    border: 2px solid rgb(24, 23, 23);
+    color: rgb(24, 23, 23);
+    background-color: rgb(199, 196, 196);
+}
+.submit-btn:hover {
+    background-color: whitesmoke;
+}
+#categories {
+    padding: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+input {
+    background-color: rgb(212, 218, 218);
+}
