@@ -9,11 +9,13 @@ class App extends Component {
             firstname: '',
             lastname: '',
             nin: '',
+            occupation: '',
             firstaddress: '',
             secondaddress: '',
             boxnumber: '',
-
-
+            category: '',
+            approval: '',
+            age: '',
         }
     }
 
@@ -35,6 +37,18 @@ class App extends Component {
         })
     }
 
+    changeOccupation = (event) => {
+        this.setState({
+            occupation: event.target.value
+        })
+    }
+
+    changeAge = (event) => {
+        this.setState({
+            age: event.target.value
+        })
+    }
+
     changeFirstAddress = (event) => {
         this.setState({
             firstaddress: event.target.value
@@ -50,6 +64,18 @@ class App extends Component {
     changeBoxNumber = (event) => {
         this.setState({
             boxnumber: event.target.value
+        })
+    }
+
+    changeCategory = (event) => {
+        this.setState({
+            category: event.target.value
+        })
+    }
+
+    changeApproval = (event) => {
+        this.setState({
+            approval: event.target.value
         })
     }
 
@@ -98,7 +124,23 @@ class App extends Component {
                             className="form-group form-control"
                             id="nin"
                         />
-
+                        <label htmlFor="occupation">OCCUPATION</label>
+                        <input type="text"
+                            placeholder="Occupation"
+                            onChange={this.changeOccupation}
+                            value={this.state.occupation}
+                            className="form-group form-control"
+                            id="occupation"
+                        />
+                        <label htmlFor="age">AGE</label>
+                        <input type="number"
+                            placeholder="Age"
+                            onChange={this.changeAge}
+                            value={this.state.age}
+                            className="form-group form-control"
+                            id="age"
+                        />
+                        <br/>
                         <p>Please, select your gender</p>
                         <input type="radio" id="male" name="gender" value="male" />
                         <label for="male">Male</label><br/>
@@ -143,22 +185,32 @@ class App extends Component {
                         <h4>Election Category</h4>
                         <label>Please choose the voting category(ies) you would like to participate in during the final elections.</label>
                         <br/>
-                        <select name="categories" id="categories">
-                            <option value="presidential elections">President</option>
-                            <option value="member of parliament">Member of Parliament (MP)</option>
-                            <option value="district leaders">District Leader</option>
-                            <option value="local council">President & MP</option>
-                            <option value="">President & District Leader</option>
-                            <option value="">MP & District Leader</option>
-                            <option value="all">All</option>
+                        <select name="categories" id="categories" onChange={this.changeCategory}>
+                            <option value="President">President</option>
+                            <option value="Member of Parliament">Member of Parliament (MP)</option>
+                            <option value="District Leader">District Leader</option>
+                            <option value="President & MP">President & MP</option>
+                            <option value="President & District Leader">President & District Leader</option>
+                            <option value="MP & District Leader">MP & District Leader</option>
+                            <option value="All">All</option>
                         </select>
                     </div>
-                    <br/>    
+                    <br/> 
+                    <br/>
+                    <div className="approval">
+                        <input type="checkbox" id="approval" name="approval" value="Completed Approval" onChange={this.changeApproval}/>
+                        <label for="vehicle1"><p style={{ marginLeft: "5px" }}>I hereby agree that I am a citizen of Uganda and I am liable to legal prosecution for unlawful misuse of this document.</p></label>
+                    </div>   
                     <br/>                
 
                     <button className="submit-btn"><h5>Submit Details</h5></button>
-
                 </form>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <p>{this.state.age}</p>
+                <p className="warning">This is property of the Electoral Commission of Uganda. Unlawful use of this document will lead to prosecution in the Highest Court of Law</p>
             </div>
          );
     }

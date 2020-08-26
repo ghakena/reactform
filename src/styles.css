@@ -1,17 +1,18 @@
 body {
-    background-image: url("https://res.cloudinary.com/rokuirie/image/upload/v1598445915/react-form/ug_flag_1_1_ojkbaj.png");
-    background-repeat: inherit;
+    /* background-image: url("https://res.cloudinary.com/rokuirie/image/upload/v1598445915/react-form/ug_flag_1_1_ojkbaj.png");
+    background-repeat: inherit; */
     font-family: 'Hind Madurai', sans-serif;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(34, 34, 34);
 }
 .container {
     background-color: rgb(199, 196, 196);
     padding-top: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     padding-left: 25px;
     padding-right: 25px;
-    margin-top: 10px;
-    margin-bottom: 120px;
+    margin-top: 40px;
+    margin-bottom: 100px;
 }
 .first-line {
     font-weight: bold;
@@ -35,4 +36,15 @@ label {
 }
 input {
     background-color: rgb(212, 218, 218);
+}
+.approval-message {
+    font-size: 17px;
+}
+.warning {
+    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 0px;
 }
