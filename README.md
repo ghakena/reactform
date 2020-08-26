@@ -1,3 +1,6 @@
+## This simple project is an illustration of the use of controlled components in React.
+## I applied this concept to create a simple voter's form therein.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
